@@ -1,3 +1,7 @@
 /* CSS global */
 @import 'global/global.css';
 @import 'global/header.css';
+
+/*ANIMAÇÕES */
+@import 'animacoes/animacoes.css';
+@import 'animacoes/simple-anime.css';
