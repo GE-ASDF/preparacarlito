@@ -37,6 +37,13 @@ img{
 .font-p-1{
     font-size:18px;
 }
+
+.font-m-b{
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+
 .btn{
     background-color: rgb(145, 15, 15);
     outline: none;

@@ -5,6 +5,10 @@
     background-position: center center;
     height: 100vh;
 }
+.containerGeneral{
+    width: 100%;
+    height: calc(100% - 100px);
+}
 .backColor{
     position: relative;
     background: linear-gradient(to right, rgb(20,20,20) 60%, transparent 50%);
@@ -36,4 +40,24 @@
 }
 .mg-top{
     margin-top:100px;
+}
+.courseInformationContainer{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(20,20,20);
+    border-top: 1px solid rgb(63, 63, 63);
+    display: flex;
+    justify-content: center;
+}
+.courseInformationContent{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding:20px;
+}
+
+.information{
+    flex:1;
+    height: 100%;
+    margin:0 auto;
 }
