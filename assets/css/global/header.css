@@ -127,6 +127,12 @@
     #header{
         height: max-content;
     }
+    .information .courseTitle {
+        font-size: 32px;
+    }
+    .courseTitle{
+        font-size: 48px;
+    }
     .containerHeaderContent{
         padding-left: 50px;
     }
@@ -172,6 +178,7 @@
 @media screen and (max-width:550px){
     #header{
         height:max-content;
+        
     }
   .container{
       height: max-content;
@@ -201,7 +208,7 @@
     .headerSubtitle{
         font-size: 18px;
     }
-    .courseTitle{
+    .information .courseTitle{
         font-size: 24px;
     }
     .containerInformation {
@@ -214,8 +221,7 @@
     .advantages{
         display: flex;
         flex-direction: column;
-        padding:0px;
-
+        padding:20px;
     }
     .advantagesContainer{
         padding:0px;
