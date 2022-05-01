@@ -6,3 +6,7 @@
 /*ANIMAÇÕES */
 @import 'animacoes/animacoes.css';
 @import 'animacoes/simple-anime.css';
+
+/* INDEX */
+
+@import 'index/header.css';
