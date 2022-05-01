@@ -84,6 +84,22 @@ main{
     height: 50px;
 }
 @media screen and (max-width:1340px) {
+    #header{
+        height: auto;
+    }
+    .advantagesContainer{
+        height: auto;
+    }
+    .advantages .advantage .span{
+        font-size: 16px;
+    }
+    .advantage .text{
+        font-size: 14px;
+    }
+    .btnHeader{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
     .containerCourseAdvantages{
         padding:60px;
     }
@@ -108,7 +124,7 @@ main{
     }
 }
 @media screen and (max-width:1150px) {
-    
+
     .courseAdvantages{
         grid-template-columns: 1fr;
         padding: 0px;
@@ -130,6 +146,14 @@ main{
     }
     .boxSalary{
         padding:0px;
+    }
+}
+@media (max-width:820px){
+    .btnHeader{
+        margin-bottom: 15px;
+    }
+    .contentRight img{
+        margin-bottom: 30px;
     }
 }
 @media screen and (max-width:620px){
