@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 100vh;
+    height: auto;
 }
 .containerHeaderContent{
     display: grid;
@@ -35,7 +35,9 @@
     color: #1256A9;
     margin-top:60px;
 }
-
+.btnHeader{
+    margin-bottom: 60px;
+}
 .contentLeft{
     display: flex;
     flex-direction: column;
@@ -43,7 +45,7 @@
     padding-left:100px;
 }
 .titleHeader{
-   margin-bottom:60px;
+    margin-top: 60px;
 }
 .courseTitle{
     font-size: 64px;
@@ -227,5 +229,32 @@
     .information{
         width: 100%;
         padding:10px;
+    }
+}
+@media (max-width:1600px){
+    #header{
+        height: auto;
+    }
+    .information img{
+        width: 312px;
+    }
+    .titleHeader{
+        margin-top: 60px;
+        margin-bottom: 0;
+    }
+    .courseTitle{
+        font-size: 48px;
+    }
+    .btnHeader{
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+}
+@media (max-width:820px){
+    .btnHeader{
+        margin-bottom: 15px;
+    }
+    .contentRight img{
+        margin-bottom: 30px;
     }
 }
