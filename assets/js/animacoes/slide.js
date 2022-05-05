@@ -4,30 +4,29 @@ let p2 = document.createElement("p")
 let a = document.createElement("a");
 let index = 0;
 
-/*<div class="slide slide1 font-w font-m-b">
-<p class="disclaimer fadeInRight" data-anime="500">Desenvolvedor web</p>
-<p class="disclaimerSub fadeInRight" data-anime="700">Aprenda a construir sites como um mestre e seja encaminhado para o mercado de trabalho.</p>
-<a href="cursos/devweb.html"><button class="btn btn-large font-w fadeInRight" data-anime="800">Conheça mais</button></a> 
-</div>*/
-
 acao();
 
 function acao(){
     if(index === slides.length){
         index = 0;
     }
+
+    let disclaimerText = slides[index].disclaimer
+    let disclaimerSubText = slides[index].disclaimerSub
+    let linkedText = slides[index].linked
+
     sliders.append(p1)
     p1.classList.add("disclaimer", "fadeInRight")
     p1.setAttribute("data-anime", "500")
-    p1.innerHTML = slides[index].disclaimer;
+    p1.innerHTML = disclaimerText;
 
     sliders.append(p2)
     p2.setAttribute("data-anime", "500")
     p2.classList.add("disclaimerSub", "fadeInRight")
-    p2.innerHTML = slides[index].disclaimerSub;
+    p2.innerHTML = disclaimerSubText;
 
     sliders.append(a)
-    a.setAttribute("href", `${slides[index].linked}`)
+    a.setAttribute("href", `${linkedText}`)
     a.innerHTML = '<button class="btn btn-large font-w fadeInRight" data-anime="800">Conheça mais</button>'
     index++;
  
