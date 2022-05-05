@@ -1,0 +1,36 @@
+
+#sectionMain{
+    background:linear-gradient(to left top, rgb(117, 6, 6) 50%,rgb(130, 13, 7) 60%);
+}
+.sectionContent{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #202020;
+    padding-bottom: 60px;
+}
+.sectionContent h1{
+    margin-left:60px;
+}
+.contentCourses{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.course{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.courses{
+    width: 200px;
+    height: 200px;
+    background-color: #505050;
+    border-radius: 100%;
+    margin:30px;
+    text-align: center;
+}
+
