@@ -16,7 +16,7 @@ function acao(){
     let linkedText = slides[index].linked
 
     sliders.append(p1)
-    p1.classList.add("disclaimer", "fadeInRight")
+    p1.classList.add("disclaimer", "fadeInDown")
     p1.setAttribute("data-anime", "500")
     p1.innerHTML = disclaimerText;
 
