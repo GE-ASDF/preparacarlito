@@ -9,14 +9,13 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
- 
 }
 #piHeader .btn{
     height: 50px;
     width: 200px;
     padding:0px 10px 0px 10px;
     font-size: 16px;
-    margin: 0px 20px 0px 20px;
+    margin:0;
 }
 .addressHeader, a{
     color:#dccccc;
@@ -84,7 +83,7 @@
 }
 .slide{
     font-size: 48px;
-    width: 500px;
+    width: auto;
     line-break: auto;
     height: 100%;
     display: flex;
@@ -110,12 +109,16 @@
     position: absolute;
     left:-15px;
 }
+#piHeader a{
+    width: max-content;
+}
 .disclaimerSub{
     padding:0;
     margin:0;
     font-weight: 300;
     font-size: 24px;
     margin-bottom: 30px;
+    width: 500px;
 }
 
 .open-menu{
@@ -193,6 +196,9 @@
     }
     .slide{
         padding-right:20px;
+        width: 100%;
+    }
+    .disclaimerSub{
         width: 100%;
     }
 }
