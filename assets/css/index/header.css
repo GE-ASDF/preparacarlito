@@ -87,7 +87,7 @@
     line-break: auto;
     height: 100%;
     display: flex;
-
+    z-index: 100;
     flex-direction: column;
 }
 
