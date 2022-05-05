@@ -14,20 +14,18 @@ function acao(){
     let disclaimerText = slides[index].disclaimer
     let disclaimerSubText = slides[index].disclaimerSub
     let linkedText = slides[index].linked
-
+    
     sliders.append(p1)
-    p1.classList.add("disclaimer", "fadeInDown")
-    p1.setAttribute("data-anime", "500")
+    p1.classList.add("disclaimer")
     p1.innerHTML = disclaimerText;
-
+    
     sliders.append(p2)
-    p2.setAttribute("data-anime", "500")
-    p2.classList.add("disclaimerSub", "fadeInRight")
+    p2.classList.add("disclaimerSub")
     p2.innerHTML = disclaimerSubText;
-
+    
     sliders.append(a)
-    a.setAttribute("href", `${linkedText}`)
-    a.innerHTML = '<button class="btn btn-large font-w fadeInRight" data-anime="800">Conheça mais</button>'
+    a.setAttribute("href", linkedText)
+    a.innerHTML = '<button class="btn btn-large font-w">Conheça mais</button>'
     index++;
  
 }

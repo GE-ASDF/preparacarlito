@@ -5,6 +5,20 @@
     background-position: center center;
     height: auto;
 }
+#cHeader{
+    background-image:url("../../images/header/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: auto;
+}
+#rotinasHeader{
+    background-image:url("../../images/header/admin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: auto;
+}
 .containerHeaderContent{
     display: grid;
     grid-template-rows: 4fr 1fr;
