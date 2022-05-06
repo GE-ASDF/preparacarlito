@@ -234,6 +234,11 @@
     .secaoProfissional{
         background: none; 
     }
+    .contentFuncionamento{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        overflow-x: scroll;
+    }
 }
 
 @media (max-width:450px){
