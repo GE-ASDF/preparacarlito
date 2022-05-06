@@ -1,6 +1,7 @@
 #cursos{
     background:linear-gradient(to left top, rgb(10, 10, 10) 70%, rgb(35, 35, 35) 70%);
 }
+
 .sectionContent{
     box-sizing: border-box;
     width: 100%;
@@ -91,5 +92,180 @@
     .course{
         margin-bottom: 20px;
         margin-top: 20px;
+    }
+}
+.titleFuncionamento{
+   width: 100%;
+}
+.titleProfissional, .titleFuncionamento{
+    margin-bottom: 50px;
+}
+.secaoProfissional{
+    padding:50px 0px 50px 0px;
+    background: url("../../images/pme.jfif") no-repeat;
+    background-position: center right;
+    background-size: 300px;
+}
+.titleProfissional{
+    width:500px;
+}
+.secaoProfissional h2, .titleFuncionamento h2{
+    font-family: 'Radio Canada';
+    font-size: 48px;
+    color:#000;
+}
+.listaVantagens li{
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    position:relative;
+    padding:15px 0px 0px 50px;
+}
+.listaVantagens li:nth-child(4){
+    padding-bottom: 50px;
+}
+
+.listaVantagens li::before{
+    content:"";
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border-radius: 100%;
+    display: block;
+    position: absolute;
+    left:0;
+}
+.responsavel .titleResponsavel{
+    font-size: 24px;
+    font-weight: bold;
+    color:#202020;
+    text-align: right;
+}
+.responsavel .posicao{
+    font-size: 18px;
+    text-align: right;
+    margin-bottom: 30px;
+}
+.funcionamentoCursos{
+    padding:50px 0px 50px 0px;
+}
+.funcionamentoCursos{
+    padding:20px;
+}
+.contentFuncionamento{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contentFuncionamento .content{
+    margin:50px;
+    position: relative;
+}
+.content .textContent{
+    width: 200px;
+}
+.textContent h2{
+    margin-bottom: 10px;
+}
+.contentFuncionamento p{
+    padding:0px;
+}
+.contentFuncionamento .content{
+    display: flex;
+}
+.secaoProfissional{
+    padding:20px;
+}
+.content .img1::before{
+    content:"";
+    position:absolute;
+    width: 100px;
+    left: -25px;
+    height: 50px;
+    display: block;
+    border-radius: 150%;
+    transform: rotate(-45deg);
+    background:linear-gradient(to bottom, rgb(54, 54, 213), rgb(67, 116, 148));
+    z-index: -1;
+}
+.content .img2::before{
+    content:"";
+    position:absolute;
+    width: 100px;
+    left: -25px;
+    height: 50px;
+    display: block;
+    border-radius: 150%;
+    transform: rotate(-45deg);
+    background:linear-gradient(to bottom, rgb(21, 69, 28), rgb(77, 206, 127));
+    z-index: -1;
+}
+.content .img3::before{
+    content:"";
+    position:absolute;
+    width: 100px;
+    left: -25px;
+    height: 50px;
+    display: block;
+    border-radius: 150%;
+    transform: rotate(-45deg);
+    background:linear-gradient(to bottom, rgb(105, 28, 28), rgb(172, 67, 76));
+    z-index: -1;
+}
+.content .img4::before{
+    content:"";
+    position:absolute;
+    width: 100px;
+    left: -25px;
+    height: 50px;
+    display: block;
+    border-radius: 150%;
+    transform: rotate(-45deg);
+    background:linear-gradient(to bottom, rgb(130, 56, 7), rgb(188, 164, 76));
+    z-index: -1;
+}
+
+@media (max-width:1250px){
+    .secaoProfissional{
+        background-position: right top;   
+    }
+}
+@media (max-width:800px){
+    .secaoProfissional{
+        background: none; 
+    }
+}
+
+@media (max-width:450px){
+    .titleProfissional{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .titleProfissional h2{
+        font-size: 1.5em;
+    }
+    .listaVantagens li{
+        font-size: 22px;
+    }
+    .listaVantagens li::before{
+        width: 20px;
+        height: 20px;
+    }
+    .funcionamentoCursos .funcionamentoAulas{
+        line-break: auto;
+    }
+    .funcionamentoAulas .titleFuncionamento h2{ 
+        font-size: 36px;
+    }
+    #cursos h1{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width:360px){
+    .contentFuncionamento{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        overflow-x: scroll;
     }
 }
