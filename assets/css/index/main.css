@@ -1,6 +1,5 @@
-
 #cursos{
-    background:linear-gradient(to left top, rgb(117, 6, 6) 50%,rgb(130, 13, 7) 60%);
+    background:linear-gradient(to left top, rgb(10, 10, 10) 70%, rgb(35, 35, 35) 70%);
 }
 .sectionContent{
     box-sizing: border-box;
@@ -10,6 +9,16 @@
 }
 .sectionContent h1{
     margin-left:60px;
+    position: relative;
+}
+.sectionContent h1::before{
+    content:"";
+    background: linear-gradient(to bottom, rgb(162,0,0), rgb(206, 14, 14));
+    height: 100%;
+    transition: height 0.4s ease-in-out;
+    width: 5px;
+    position: absolute;
+    left:-15px;
 }
 .contentCourses{
     width: 100%;
@@ -20,10 +29,9 @@
 }
 
 .course{
-    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 .courses{
     width: 200px;
@@ -31,6 +39,57 @@
     background-color: #505050;
     border-radius: 100%;
     margin:30px;
-    text-align: center;
 }
 
+.course1{
+    background: url("../../images/computer.avif");
+    background-size: cover;
+    background-position: center;
+}
+.course2{
+    background: url("../../images/saude.avif");
+    background-size: cover;
+    background-position: center;
+}
+.course3{
+    background: url("../../images/c.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.course4{
+    background: url("../../images/javascript.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.course5{
+    background: url("../../images/admin.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.course6{
+    background: url("../../images/english.avif");
+    background-size: cover;
+    background-position: center;
+}
+.course7{
+    background: url("../../images/excel.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.course8{
+    background: url("../../images/design.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width:860px) {
+    .contentCourses{
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        justify-content: flex-start;
+    }
+    .course{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
